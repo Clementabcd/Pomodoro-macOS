@@ -1,0 +1,23 @@
+{
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.swiftdeps"
+  }
+}

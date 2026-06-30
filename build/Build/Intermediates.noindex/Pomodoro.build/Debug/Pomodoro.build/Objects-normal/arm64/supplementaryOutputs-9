@@ -1,0 +1,23 @@
+{
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.swiftdeps"
+  }
+}

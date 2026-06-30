@@ -1,0 +1,23 @@
+{
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.dia",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.swiftdeps"
+  }
+}

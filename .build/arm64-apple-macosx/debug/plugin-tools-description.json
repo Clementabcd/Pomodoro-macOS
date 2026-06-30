@@ -1,0 +1,960 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/Assets.xcassets" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/Assets.xcassets"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/Assets.xcassets"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/Info.plist"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/de.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/de.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/de.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/es.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/es.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/es.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/fr.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/fr.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/fr.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/ja.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Resources/ja.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro_Pomodoro.bundle/ja.lproj/Localizable.strings"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Pomodoro-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/sources",
+      "importPath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppUsage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/PomodoroSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/TimerPhase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/PomodoroApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AmbientSoundService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AppTracker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/NotificationService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/PersistenceService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/TimerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/StatisticsViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/TimerViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/AmbientSoundPlayerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GlassComponents.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GoalPlannerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/OnboardingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/StatisticsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerRingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TodayView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<Pomodoro-arm64-apple-macosx-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Pomodoro",
+      "moduleOutputPath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Modules/Pomodoro.swiftmodule",
+      "objects" : [
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppDelegate.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppSettings.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppUsage.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Goal.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroSession.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerPhase.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroApp.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundService.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppTracker.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/NotificationService.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PersistenceService.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerService.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Localized.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsViewModel.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerViewModel.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundPlayerView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ContentView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ControlButtonsView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Effects.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GlassComponents.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GoalPlannerView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/MenuBarView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/OnboardingView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PhaseBadgeView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/QuickTimeAdjustView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/SettingsView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimeStepper.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerMenuLabel.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerRingView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TodayView.swift.o",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx15.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Pomodoro_main",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "pomodoro"
+      ],
+      "outputFileMapPath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppUsage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Goal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerPhase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppTracker.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/NotificationService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PersistenceService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Localized.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundPlayerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ControlButtonsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Effects.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GlassComponents.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GoalPlannerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/OnboardingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PhaseBadgeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/QuickTimeAdjustView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/SettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimeStepper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerMenuLabel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerRingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TodayView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Modules/Pomodoro.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/AppDelegate.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppSettings.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppUsage.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/PomodoroSession.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/TimerPhase.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/PomodoroApp.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AmbientSoundService.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AppTracker.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/NotificationService.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/PersistenceService.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/TimerService.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/StatisticsViewModel.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/TimerViewModel.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/AmbientSoundPlayerView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ContentView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GlassComponents.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GoalPlannerView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/OnboardingView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/SettingsView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/StatisticsView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerRingView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TodayView.swift",
+        "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Pomodoro" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "Pomodoro",
+      "-package-name",
+      "pomodoro",
+      "-c",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/AppDelegate.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppSettings.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppUsage.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/PomodoroSession.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/TimerPhase.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/PomodoroApp.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AmbientSoundService.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AppTracker.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/NotificationService.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/PersistenceService.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/TimerService.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/StatisticsViewModel.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/TimerViewModel.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/AmbientSoundPlayerView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ContentView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GlassComponents.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GoalPlannerView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/OnboardingView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/SettingsView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/StatisticsView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerRingView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TodayView.swift",
+      "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx15.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Pomodoro_main",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "pomodoro",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Pomodoro" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro-entitlement.plist"
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppSettings.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppUsage.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/PomodoroSession.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/TimerPhase.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/PomodoroApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AmbientSoundService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AppTracker.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/NotificationService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/PersistenceService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/TimerService.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/StatisticsViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/TimerViewModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/AmbientSoundPlayerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GlassComponents.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GoalPlannerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/OnboardingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/SettingsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/StatisticsView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerRingView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TodayView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/sources"
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundPlayerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AmbientSoundService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppSettings.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppTracker.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/AppUsage.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/ControlButtonsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Effects.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GlassComponents.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Goal.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/GoalPlannerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/Localized.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/MenuBarView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/NotificationService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/OnboardingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PersistenceService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PhaseBadgeView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/PomodoroSession.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/QuickTimeAdjustView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/SettingsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/StatisticsViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimeStepper.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerMenuLabel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerPhase.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerRingView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerService.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TimerViewModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/TodayView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.build/resource_bundle_accessor.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/Pomodoro.product/Objects.LinkFileList"
+    },
+    "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/clementjonghmans/Downloads/pomodoro/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

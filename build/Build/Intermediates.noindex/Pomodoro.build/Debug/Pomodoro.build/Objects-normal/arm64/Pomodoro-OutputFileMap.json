@@ -1,0 +1,339 @@
+{
+  "" : {
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Pomodoro-primary.dia",
+    "emit-module-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Pomodoro-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Pomodoro-primary-emit-module.dia",
+    "pch" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Pomodoro-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Pomodoro-primary.swiftdeps"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/AppDelegate.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppSettings.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppSettings~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/AppUsage.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppUsage~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/Goal.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Goal~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/PomodoroSession.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroSession~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Models/TimerPhase.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerPhase~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/PomodoroApp.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PomodoroApp~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AmbientSoundService.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundService~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/AppTracker.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AppTracker~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/NotificationService.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/NotificationService~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/PersistenceService.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PersistenceService~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Services/TimerService.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerService~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Utilities/Localized.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Localized~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/StatisticsViewModel.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsViewModel~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/ViewModels/TimerViewModel.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerViewModel~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/AmbientSoundPlayerView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/AmbientSoundPlayerView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ContentView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/ControlButtonsView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/ControlButtonsView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/Effects.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/Effects~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GlassComponents.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GlassComponents~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/GoalPlannerView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GoalPlannerView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/MenuBarView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/MenuBarView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/OnboardingView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/PhaseBadgeView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/PhaseBadgeView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/QuickTimeAdjustView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/QuickTimeAdjustView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/SettingsView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/StatisticsView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/StatisticsView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimeStepper.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimeStepper~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerMenuLabel.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerMenuLabel~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerRingView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerRingView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TimerView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TimerView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/Sources/Pomodoro/Views/TodayView.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/TodayView~partial.swiftmodule"
+  },
+  "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/clementjonghmans/Downloads/pomodoro/build/Build/Intermediates.noindex/Pomodoro.build/Debug/Pomodoro.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

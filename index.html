@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro — Un minuteur focus, élégant et apaisant</title>
+<link rel="icon" type="image/png" href="Sources/Pomodoro/Resources/Assets.xcassets/AppIcon.appiconset/icon_32x32.png">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --sand: #C4A685;
+  --soft-sand: #D9BF9E;
+  --terracotta: #A67D6B;
+  --sage: #8FA88A;
+  --moss: #7A9473;
+  --sky: #8AA8C4;
+  --stoneblue: #7594B5;
+  --cream: #FAF5ED;
+  --cream-white: #F7F2E8;
+  --warm-white: #F5F0EB;
+  --warm-gray: #80756B;
+  --warm-black: #292421;
+  --glass-bg: rgba(250, 245, 237, 0.6);
+  --glass-border: rgba(196, 166, 133, 0.15);
+  --bg: var(--cream);
+}
+
+[data-theme="dark"] {
+  --bg: #1C1917;
+  --cream: #1C1917;
+  --cream-white: #23201E;
+  --warm-white: #2A2623;
+  --warm-black: #F5F0EB;
+  --warm-gray: #B5ABA1;
+  --glass-bg: rgba(28, 25, 23, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.06);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--warm-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* ─── Navigation ─── */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(250, 245, 237, 0.85);
+  backdrop-filter: blur(20px) saturate(1.2);
+  border-bottom: 1px solid var(--glass-border);
+  transition: background 0.4s;
+}
+
+[data-theme="dark"] nav {
+  background: rgba(28, 25, 23, 0.85);
+}
+
+nav .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--warm-black);
+  text-decoration: none;
+  letter-spacing: -0.3px;
+  transition: color 0.4s;
+}
+
+nav .logo img { width: 28px; height: 28px; border-radius: 6px; }
+
+nav .logo span { background: linear-gradient(135deg, var(--sand), var(--terracotta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+nav .links { display: flex; gap: 28px; align-items: center; }
+
+nav .links a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--warm-gray);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav .links a:hover { color: var(--terracotta); }
+
+nav .links .theme-toggle {
+  background: none;
+  border: 1px solid var(--glass-border);
+  border-radius: 100px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--warm-gray);
+  transition: background 0.2s;
+}
+
+nav .links .theme-toggle:hover { background: rgba(196, 166, 133, 0.1); }
+
+nav .links .download-btn {
+  padding: 8px 20px;
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  color: white !important;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+nav .links .download-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(166, 125, 107, 0.3);
+}
+
+/* ─── Sections ─── */
+section { padding: 120px 32px; position: relative; }
+
+section .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--warm-black);
+}
+
+h2 .highlight { background: linear-gradient(135deg, var(--sand), var(--terracotta)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.section-sub {
+  font-size: 16px;
+  color: var(--warm-gray);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ─── Particle canvas ─── */
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── Hero ─── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 32px 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 400px at 20% 60%, rgba(196, 166, 133, 0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 500px 500px at 80% 30%, rgba(143, 168, 138, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 400px 400px at 50% 80%, rgba(166, 125, 107, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+[data-theme="dark"] .hero-bg {
+  opacity: 0.5;
+}
+
+.hero .inner { position: relative; max-width: 900px; z-index: 1; }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(196, 166, 133, 0.1);
+  border: 1px solid rgba(196, 166, 133, 0.15);
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--terracotta);
+  margin-bottom: 28px;
+  animation: fadeDown 0.8s ease;
+}
+
+.hero-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 28px;
+  font-size: 36px;
+  box-shadow: 0 8px 32px rgba(196, 166, 133, 0.25);
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 7vw, 68px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: var(--warm-black);
+  animation: fadeUp 1s ease;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--warm-gray);
+  max-width: 580px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+  animation: fadeUp 1s ease 0.2s both;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease 0.4s both;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  color: white;
+  border: none;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(166, 125, 107, 0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--cream-white);
+  color: var(--warm-black);
+  border: 1px solid var(--glass-border);
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-secondary:hover {
+  background: var(--cream);
+  transform: translateY(-2px);
+}
+
+/* ─── Hero Demo ─── */
+.hero-demo {
+  margin-top: 60px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeUp 1s ease 0.6s both;
+}
+
+.demo-window {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 28px 36px;
+  width: 340px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+[data-theme="dark"] .demo-window {
+  background: rgba(42, 38, 35, 0.7);
+}
+
+.demo-window:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+}
+
+.demo-window .demo-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.demo-window .demo-header span {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+
+.demo-window .demo-header span:nth-child(1) { background: #E8A0A0; }
+.demo-window .demo-header span:nth-child(2) { background: #E8C8A0; }
+.demo-window .demo-header span:nth-child(3) { background: #A0C8A0; }
+
+/* ─── Timer Ring ─── */
+.timer-ring-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 20px;
+}
+
+.timer-ring-container svg { transform: rotate(-90deg); }
+
+.timer-ring-bg { fill: none; stroke: rgba(196, 166, 133, 0.12); stroke-width: 4; }
+.timer-ring-progress { fill: none; stroke: var(--sand); stroke-width: 4; stroke-linecap: round; transition: stroke-dashoffset 0.5s ease; stroke: url(#ringGrad); }
+
+.timer-ring-text {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.timer-ring-text .time {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: var(--warm-black);
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-ring-text .phase {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--warm-gray);
+  margin-top: 2px;
+}
+
+.demo-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.demo-btn {
+  padding: 8px 20px;
+  border-radius: 100px;
+  border: 1px solid var(--glass-border);
+  background: white;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--warm-gray);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+[data-theme="dark"] .demo-btn {
+  background: var(--warm-white);
+}
+
+.demo-btn:hover { background: var(--cream); color: var(--warm-black); }
+
+.demo-btn.primary {
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  color: white;
+  border: none;
+}
+
+.demo-btn.primary:hover { box-shadow: 0 4px 16px rgba(166, 125, 107, 0.3); }
+
+.cycle-steps {
+  max-width: 360px;
+  text-align: left;
+}
+
+.cycle-steps h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--sand);
+  margin-bottom: 12px;
+}
+
+.cycle-steps .step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--warm-gray);
+  border-bottom: 1px solid rgba(196, 166, 133, 0.08);
+}
+
+.cycle-steps .step:last-child { border: none; }
+
+.cycle-steps .step .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cycle-steps .step .arrow { color: rgba(196, 166, 133, 0.2); font-size: 10px; margin-left: auto; }
+
+/* ─── Divider shape ─── */
+.section-divider {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  fill: var(--cream-white);
+  pointer-events: none;
+}
+
+.section-divider.top {
+  top: -1px;
+  bottom: auto;
+  transform: rotate(180deg);
+}
+
+/* ─── Features ─── */
+.features {
+  background: var(--cream-white);
+  transition: background 0.4s;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 32px;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .feature-card {
+  background: rgba(42, 38, 35, 0.7);
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: linear-gradient(90deg, var(--sand), var(--terracotta));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.feature-card:hover::before { opacity: 1; }
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+}
+
+.feature-card .icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover .icon { transform: scale(1.1) rotate(-4deg); }
+
+.feature-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--warm-black);
+}
+
+.feature-card p {
+  font-size: 13px;
+  color: var(--warm-gray);
+  line-height: 1.7;
+}
+
+.feature-card .feature-tag {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 100px;
+  margin-top: 12px;
+}
+
+/* ─── How it works ─── */
+.how-it-works .inner { text-align: center; }
+.how-it-works .section-sub { margin: 0 auto 48px; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+.step-card {
+  padding: 28px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.5);
+  border: 1px solid var(--glass-border);
+  position: relative;
+  transition: transform 0.3s, background 0.3s;
+}
+
+[data-theme="dark"] .step-card {
+  background: rgba(42, 38, 35, 0.5);
+}
+
+.step-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.7); }
+
+.step-card .number {
+  font-size: 40px;
+  font-weight: 800;
+  opacity: 0.06;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: var(--sand);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.step-card:hover .number { opacity: 0.15; transform: scale(1.1); }
+
+.step-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--warm-black);
+}
+
+.step-card p {
+  font-size: 12px;
+  color: var(--warm-gray);
+  line-height: 1.6;
+}
+
+/* ─── Interactive Demo Section ─── */
+.demo-full {
+  background: linear-gradient(180deg, var(--cream) 0%, rgba(196, 166, 133, 0.04) 100%);
+}
+
+.demo-full .inner { text-align: center; }
+.demo-full .section-sub { margin: 0 auto 48px; }
+
+.demo-container {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.demo-app-mock {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(30px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 40px;
+  width: 380px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.06);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+[data-theme="dark"] .demo-app-mock {
+  background: rgba(42, 38, 35, 0.7);
+}
+
+.demo-app-mock:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 32px 100px rgba(0,0,0,0.08);
+}
+
+.demo-app-mock .timer-display {
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: var(--warm-black);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  margin: 8px 0;
+  transition: color 0.3s;
+}
+
+.demo-app-mock .phase-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--warm-gray);
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.demo-app-mock .progress-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(196, 166, 133, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.demo-app-mock .progress-track .fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--sand), var(--terracotta));
+  transition: width 1s linear;
+  width: 0%;
+}
+
+.demo-app-mock .session-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--warm-gray);
+}
+
+.demo-app-mock .session-stats span { display: flex; align-items: center; gap: 4px; }
+
+/* ─── App Screens Gallery ─── */
+.screens-gallery {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.screen-card {
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s;
+  cursor: default;
+}
+
+[data-theme="dark"] .screen-card {
+  background: rgba(42, 38, 35, 0.5);
+}
+
+.screen-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.7); }
+
+.screen-card .preview {
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen-card .preview .bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.screen-card h4 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--warm-black);
+}
+
+.screen-card p {
+  font-size: 10px;
+  color: var(--warm-gray);
+  margin-top: 2px;
+}
+
+/* ─── Color Palette Showcase ─── */
+.palette-showcase {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.palette-showcase h3 {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--sand);
+  margin-bottom: 16px;
+}
+
+.palette-swatches {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.palette-swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.3s, border-color 0.2s;
+  position: relative;
+}
+
+.palette-swatch:hover { transform: scale(1.2); border-color: var(--warm-gray); }
+
+.palette-swatch.active { border-color: var(--warm-black); transform: scale(1.15); }
+
+.palette-swatch .tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.9);
+  background: var(--warm-black);
+  color: var(--cream);
+  font-size: 9px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.palette-swatch:hover .tooltip { opacity: 1; transform: translateX(-50%) scale(1); }
+
+/* ─── Sound Demo ─── */
+.sound-demo {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sound-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255,255,255,0.5);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--warm-gray);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+  user-select: none;
+}
+
+[data-theme="dark"] .sound-pill {
+  background: rgba(42, 38, 35, 0.5);
+}
+
+.sound-pill:hover { border-color: var(--sand); color: var(--warm-black); }
+.sound-pill.playing { background: var(--sand); color: white; border-color: var(--sand); }
+
+.sound-pill .indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.sound-pill.playing .indicator {
+  animation: pulse-dot 1s ease infinite;
+  opacity: 1;
+}
+
+/* ─── Stats Counter ─── */
+.stats-counters {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.counter-item {
+  text-align: center;
+}
+
+.counter-item .number {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, var(--sand), var(--terracotta));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter-item .label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--warm-gray);
+  margin-top: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ─── Testimonial / Quote ─── */
+.testimonial {
+  text-align: center;
+  background: var(--cream-white);
+  transition: background 0.4s;
+}
+
+.testimonial blockquote {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.testimonial blockquote p {
+  font-size: clamp(18px, 3vw, 26px);
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  line-height: 1.5;
+  color: var(--warm-black);
+  font-style: italic;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--warm-gray);
+  font-style: normal;
+}
+
+/* ─── Download ─── */
+.download {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.download-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 600px 300px at 50% 50%, rgba(196, 166, 133, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.download .inner { position: relative; z-index: 1; }
+
+.download .btn-primary { font-size: 16px; padding: 16px 40px; }
+
+.download .small-note {
+  font-size: 12px;
+  color: var(--warm-gray);
+  margin-top: 12px;
+  opacity: 0.6;
+}
+
+.download .requirements {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--warm-gray);
+  opacity: 0.5;
+}
+
+/* ─── Footer ─── */
+footer {
+  padding: 40px 32px;
+  border-top: 1px solid var(--glass-border);
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  color: var(--warm-gray);
+  opacity: 0.5;
+}
+
+/* ─── Animations ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.6); }
+}
+
+.animate-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* staggered children */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stagger-children.visible > *:nth-child(1) { transition-delay: 0s; }
+.stagger-children.visible > *:nth-child(2) { transition-delay: 0.08s; }
+.stagger-children.visible > *:nth-child(3) { transition-delay: 0.16s; }
+.stagger-children.visible > *:nth-child(4) { transition-delay: 0.24s; }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 0.32s; }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 0.40s; }
+
+.stagger-children.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  nav .links a:not(.download-btn):not(.theme-toggle) { display: none; }
+  .hero-demo { flex-direction: column; }
+  .demo-container { flex-direction: column; }
+  .demo-app-mock { width: 100%; max-width: 380px; }
+  section { padding: 60px 20px; }
+  .screens-gallery { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0">
+  <defs>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="var(--sand)" />
+      <stop offset="100%" stop-color="var(--terracotta)" />
+    </linearGradient>
+  </defs>
+</svg>
+
+<canvas id="particles"></canvas>
+
+<!-- Navigation -->
+<nav>
+  <div class="inner">
+    <a href="#" class="logo">
+      <img src="Sources/Pomodoro/Resources/Assets.xcassets/AppIcon.appiconset/icon_32x32.png" alt="Pomodoro">
+      <span>Pomodoro</span>
+    </a>
+    <div class="links">
+      <a href="#features">Fonctionnalités</a>
+      <a href="#how">Méthode</a>
+      <a href="#demo">Essayer</a>
+      <button class="theme-toggle" id="themeToggle" title="Changer le thème">🌙</button>
+      <a href="#download" class="download-btn">Télécharger</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="inner">
+    <div class="hero-badge">✦ v1.0 — Gratuit & open source</div>
+    <div class="hero-icon">⏱</div>
+    <h1>Retrouvez le <span>flow</span>,<br>une session à la fois</h1>
+    <p>Un minuteur de focus élégant qui vous aide à travailler en profondeur. Design apaisant, sons ambiants, et statistiques pour suivre votre progression.</p>
+    <div class="hero-actions">
+      <a href="#download" class="btn-primary">Télécharger gratuitement ↓</a>
+      <a href="#demo" class="btn-secondary">Essayer le minuteur →</a>
+    </div>
+    <div class="hero-demo">
+      <div class="demo-window" id="heroWindow">
+        <div class="demo-header"><span></span><span></span><span></span></div>
+        <div class="timer-ring-container" id="heroTimer">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <circle class="timer-ring-bg" cx="100" cy="100" r="88"/>
+            <circle class="timer-ring-progress" id="heroProgress" cx="100" cy="100" r="88"
+              stroke-dasharray="553" stroke-dashoffset="0"/>
+          </svg>
+          <div class="timer-ring-text">
+            <div class="time" id="heroTime">25:00</div>
+            <div class="phase" id="heroPhase">FOCUS</div>
+          </div>
+        </div>
+        <div class="demo-controls">
+          <button class="demo-btn primary" id="heroStartBtn">Démarrer</button>
+          <button class="demo-btn" id="heroResetBtn">Reset</button>
+        </div>
+      </div>
+      <div class="cycle-steps">
+        <h3>Le cycle Pomodoro</h3>
+        <div class="step"><span class="dot" style="background:var(--sand)"></span> 25 min de focus <span class="arrow">→</span></div>
+        <div class="step"><span class="dot" style="background:var(--sage)"></span> 5 min de pause <span class="arrow">→</span></div>
+        <div class="step"><span class="dot" style="background:var(--sand)"></span> 25 min de focus <span class="arrow">→</span></div>
+        <div class="step"><span class="dot" style="background:var(--stoneblue)"></span> 15 min de longue pause</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="features" id="features">
+  <div class="inner">
+    <span class="section-label animate-in">Fonctionnalités</span>
+    <h2 class="animate-in">Conçu pour la <span class="highlight">concentration</span></h2>
+    <p class="section-sub animate-in">Chaque détail est pensé pour vous aider à entrer dans le flow et y rester.</p>
+    <div class="features-grid stagger-children animate-in" id="featuresGrid">
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(196,166,133,0.12)">⏱</div>
+        <h3>Minuteur intelligent</h3>
+        <p>Cycles focus/pause personnalisables avec transitions automatiques et notifications discrètes en fin de phase.</p>
+        <span class="feature-tag" style="background:rgba(196,166,133,0.1);color:var(--sand)">Focus</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(143,168,138,0.12)">🌿</div>
+        <h3>Sons ambiants</h3>
+        <p>Pluie, forêt, vagues, feu de cheminée, nuit étoilée — une bibliothèque de sons pour créer votre environnement idéal.</p>
+        <span class="feature-tag" style="background:rgba(143,168,138,0.1);color:var(--sage)">Ambiance</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(166,125,107,0.12)">📊</div>
+        <h3>Statistiques détaillées</h3>
+        <p>Suivez vos sessions focus, pauses, objectifs quotidiens et tendances sur la semaine. Graphiques clairs et motivants.</p>
+        <span class="feature-tag" style="background:rgba(166,125,107,0.1);color:var(--terracotta)">Suivi</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(117,148,181,0.12)">🎯</div>
+        <h3>Planificateur d'objectifs</h3>
+        <p>Découpez vos projets en sessions focus. Estimez le temps nécessaire et visualisez votre progression dans le temps.</p>
+        <span class="feature-tag" style="background:rgba(117,148,181,0.1);color:var(--stoneblue)">Planning</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(196,166,133,0.12)">✨</div>
+        <h3>Design apaisant</h3>
+        <p>Palette chaude, matières glassmorphiques, animations fluides — une expérience visuelle reposante pour vos yeux.</p>
+        <span class="feature-tag" style="background:rgba(196,166,133,0.1);color:var(--sand)">Design</span>
+      </div>
+      <div class="feature-card">
+        <div class="icon" style="background:rgba(143,168,138,0.12)">🖥</div>
+        <h3>Menu Bar & Dock</h3>
+        <p>Minuteur accessible depuis la barre de menus et le dock. Badge de progression, sans jamais quitter votre flux.</p>
+        <span class="feature-tag" style="background:rgba(143,168,138,0.1);color:var(--sage)">Productivité</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how-it-works" id="how">
+  <div class="inner">
+    <span class="section-label animate-in">Comment ça marche</span>
+    <h2 class="animate-in">Une <span class="highlight">méthode</span> qui a fait ses preuves</h2>
+    <p class="section-sub animate-in">La technique Pomodoro, inventée par Francesco Cirillo dans les années 80, repose sur des sessions de travail courtes et régulières.</p>
+    <div class="steps-grid stagger-children animate-in" id="stepsGrid">
+      <div class="step-card">
+        <span class="number">1</span>
+        <h4>Choisissez une tâche</h4>
+        <p>Sélectionnez ce sur quoi vous voulez travailler. Une seule tâche à la fois pour une concentration maximale.</p>
+      </div>
+      <div class="step-card">
+        <span class="number">2</span>
+        <h4>Focus pendant 25 min</h4>
+        <p>Un minuteur défile. Travaillez sans interruption jusqu'à la sonnerie. Respirez, une chose à la fois.</p>
+      </div>
+      <div class="step-card">
+        <span class="number">3</span>
+        <h4>Pause de 5 min</h4>
+        <p>Levez-vous, étirez-vous, buvez un verre. Votre cerveau a besoin de ce repos pour rester productif.</p>
+      </div>
+      <div class="step-card">
+        <span class="number">4</span>
+        <h4>Répétez ×4</h4>
+        <p>Après 4 cycles, prenez une longue pause de 15-30 minutes. Vous venez de travailler près de 2 heures en flow.</p>
+      </div>
+    </div>
+
+    <!-- App Screens Preview -->
+    <div class="screens-gallery animate-in" style="margin-top:60px">
+      <div class="screen-card">
+        <div class="preview" style="background:linear-gradient(135deg,rgba(196,166,133,0.1),rgba(166,125,107,0.05))">
+          <span>⏱</span>
+          <div class="bar" style="background:linear-gradient(90deg,var(--sand),var(--terracotta));width:65%"></div>
+        </div>
+        <h4>Vue Timer</h4>
+        <p>L'anneau de progression et le cycle focus/pause</p>
+      </div>
+      <div class="screen-card">
+        <div class="preview" style="background:linear-gradient(135deg,rgba(143,168,138,0.1),rgba(122,148,115,0.05))">
+          <span>📊</span>
+          <div class="bar" style="background:var(--sage);width:82%"></div>
+        </div>
+        <h4>Statistiques</h4>
+        <p>Graphiques et objectifs quotidiens</p>
+      </div>
+      <div class="screen-card">
+        <div class="preview" style="background:linear-gradient(135deg,rgba(117,148,181,0.1),rgba(138,168,196,0.05))">
+          <span>🎵</span>
+          <div class="bar" style="background:var(--stoneblue);width:45%"></div>
+        </div>
+        <h4>Sons ambiants</h4>
+        <p>Bibliothèque sonore pour la concentration</p>
+      </div>
+      <div class="screen-card">
+        <div class="preview" style="background:linear-gradient(135deg,rgba(166,125,107,0.1),rgba(196,166,133,0.05))">
+          <span>🎯</span>
+          <div class="bar" style="background:var(--terracotta);width:90%"></div>
+        </div>
+        <h4>Objectifs</h4>
+        <p>Planifiez vos projets en sessions</p>
+      </div>
+      <div class="screen-card">
+        <div class="preview" style="background:linear-gradient(135deg,rgba(196,166,133,0.1),rgba(128,117,107,0.05))">
+          <span>⚙️</span>
+          <div class="bar" style="background:var(--warm-gray);width:55%"></div>
+        </div>
+        <h4>Réglages</h4>
+        <p>Personnalisez chaque aspect</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Demo -->
+<section class="demo-full" id="demo">
+  <div class="inner">
+    <span class="section-label animate-in">Essayez-le</span>
+    <h2 class="animate-in">Testez le <span class="highlight">minuteur</span></h2>
+    <p class="section-sub animate-in">Une démo interactive complète du minuteur Pomodoro avec cycles automatiques.</p>
+    <div class="demo-container">
+      <div class="demo-app-mock animate-in" id="fullDemo">
+        <div class="phase-label" id="demoPhase">FOCUS</div>
+        <div class="timer-display" id="demoTime">25:00</div>
+        <div class="progress-track">
+          <div class="fill" id="demoProgress"></div>
+        </div>
+        <div class="demo-controls" style="margin-top:20px">
+          <button class="demo-btn primary" id="demoStartBtn">Démarrer</button>
+          <button class="demo-btn" id="demoPauseBtn">Pause</button>
+          <button class="demo-btn" id="demoResetBtn">Reset</button>
+        </div>
+        <div class="session-stats">
+          <span id="demoCycles">Sessions : 0</span>
+          <span id="demoFocusTime">Focus : 0 min</span>
+        </div>
+      </div>
+      <div class="cycle-steps animate-in">
+        <h3>Cycles automatiques</h3>
+        <div class="step">🔁 25 min focus → 5 min pause → 25 min focus…</div>
+        <div class="step">📌 Longue pause (15 min) toutes les 4 sessions</div>
+        <div class="step">📈 Compteur de sessions et temps de focus cumulé</div>
+      </div>
+    </div>
+
+    <!-- Stats Counters -->
+    <div class="stats-counters animate-in">
+      <div class="counter-item">
+        <div class="number" id="counterSessions">0</div>
+        <div class="label">Sessions focus</div>
+      </div>
+      <div class="counter-item">
+        <div class="number" id="counterMinutes">0</div>
+        <div class="label">Minutes focus</div>
+      </div>
+      <div class="counter-item">
+        <div class="number" id="counterBreaks">0</div>
+        <div class="label">Prises</div>
+      </div>
+    </div>
+
+    <!-- Sound Demo -->
+    <div class="sound-demo animate-in">
+      <button class="sound-pill" data-sound="rain" onclick="toggleSound(this)">
+        <span class="indicator"></span> 🌧 Pluie
+      </button>
+      <button class="sound-pill" data-sound="forest" onclick="toggleSound(this)">
+        <span class="indicator"></span> 🌲 Forêt
+      </button>
+      <button class="sound-pill" data-sound="waves" onclick="toggleSound(this)">
+        <span class="indicator"></span> 🌊 Vagues
+      </button>
+      <button class="sound-pill" data-sound="fire" onclick="toggleSound(this)">
+        <span class="indicator"></span> 🔥 Feu
+      </button>
+      <button class="sound-pill" data-sound="night" onclick="toggleSound(this)">
+        <span class="indicator"></span> 🌙 Nuit
+      </button>
+    </div>
+
+    <!-- Palette -->
+    <div class="palette-showcase animate-in">
+      <h3>Palette de couleurs</h3>
+      <div class="palette-swatches">
+        <div class="palette-swatch" style="background:#C4A685" data-color="sand" onclick="setAccent(this)">
+          <span class="tooltip">Sand</span></div>
+        <div class="palette-swatch" style="background:#A67D6B" data-color="terracotta" onclick="setAccent(this)">
+          <span class="tooltip">Terracotta</span></div>
+        <div class="palette-swatch active" style="background:#8FA88A" data-color="sage" onclick="setAccent(this)">
+          <span class="tooltip">Sage</span></div>
+        <div class="palette-swatch" style="background:#7A9473" data-color="moss" onclick="setAccent(this)">
+          <span class="tooltip">Moss</span></div>
+        <div class="palette-swatch" style="background:#8AA8C4" data-color="sky" onclick="setAccent(this)">
+          <span class="tooltip">Sky</span></div>
+        <div class="palette-swatch" style="background:#7594B5" data-color="stoneblue" onclick="setAccent(this)">
+          <span class="tooltip">Stoneblue</span></div>
+      </div>
+      <p style="font-size:11px;color:var(--warm-gray);margin-top:8px;opacity:0.6">Cliquez pour changer l'accent — l'application aussi le permet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial -->
+<section class="testimonial">
+  <div class="inner">
+    <blockquote class="animate-in">
+      <p>« Le design est magnifique, les sons ambiants m'aident à me concentrer comme jamais. Mon nouvel outil favori pour le travail profond. »</p>
+      <cite>— Clément, designer produit</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Download -->
+<section class="download" id="download">
+  <div class="download-bg"></div>
+  <div class="inner">
+    <span class="section-label animate-in">Téléchargement</span>
+    <h2 class="animate-in">Prêt à <span class="highlight">essayer</span> ?</h2>
+    <p class="section-sub animate-in" style="margin:0 auto 32px">Pomodoro est gratuit, open source, et respectueux de votre vie privée.</p>
+    <a href="#" class="btn-primary animate-in" id="downloadBtn">Télécharger pour macOS ↓</a>
+    <p class="small-note animate-in">macOS 15.0 (Sequoia) ou ultérieur • Apple Silicon & Intel</p>
+    <div class="requirements animate-in">
+      <span>📦 ~5 MB</span>
+      <span>🔒 Open Source</span>
+      <span>🌍 5 langues</span>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>Pomodoro &copy; 2026 — Conçu avec attention pour des sessions de travail en flow.</p>
+</footer>
+
+<script>
+// ─── Particles ───
+const canvas = document.getElementById('particles');
+const ctx = canvas.getContext('2d');
+let particles = [];
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+function createParticle() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  return {
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - 0.5) * 0.3,
+    vy: (Math.random() - 0.5) * 0.3,
+    r: Math.random() * 2 + 0.5,
+    alpha: Math.random() * 0.3 + 0.05,
+    color: isDark ? `255,255,255` : ['196,166,133', '143,168,138', '166,125,107', '138,168,196'][Math.floor(Math.random() * 4)]
+  };
+}
+
+for (let i = 0; i < 60; i++) particles.push(createParticle());
+
+function drawParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${p.color}, ${p.alpha})`;
+    ctx.fill();
+    p.x += p.vx; p.y += p.vy;
+    if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+    if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+  });
+  requestAnimationFrame(drawParticles);
+}
+
+drawParticles();
+
+window.addEventListener('themeChange', () => {
+  particles = Array.from({ length: 60 }, createParticle);
+});
+
+// ─── Parallax on hero window ───
+const heroWindow = document.getElementById('heroWindow');
+document.querySelector('.hero').addEventListener('mousemove', e => {
+  const rect = heroWindow.getBoundingClientRect();
+  const x = (e.clientX - rect.left - rect.width / 2) / 30;
+  const y = (e.clientY - rect.top - rect.height / 2) / 30;
+  heroWindow.style.transform = `translate(${x}px, ${y}px)`;
+});
+document.querySelector('.hero').addEventListener('mouseleave', () => {
+  heroWindow.style.transform = '';
+});
+
+// ─── Ring SVG ───
+const circumference = 2 * Math.PI * 88;
+
+// ─── Hero Timer ───
+const heroTimer = {
+  duration: 25 * 60,
+  remaining: 25 * 60,
+  running: false,
+  phase: 'focus',
+  interval: null,
+
+  get progress() { return 1 - this.remaining / this.duration; },
+
+  format(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  },
+
+  updateDisplay() {
+    document.getElementById('heroTime').textContent = this.format(this.remaining);
+    document.getElementById('heroPhase').textContent = this.phase === 'focus' ? 'FOCUS' : 'PAUSE';
+    const offset = circumference * (1 - this.progress);
+    document.getElementById('heroProgress').style.strokeDashoffset = offset;
+  },
+
+  tick() {
+    this.remaining--;
+    if (this.remaining <= 0) {
+      if (this.phase === 'focus') {
+        this.phase = 'break';
+        this.duration = 5 * 60;
+        this.remaining = 5 * 60;
+      } else {
+        this.phase = 'focus';
+        this.duration = 25 * 60;
+        this.remaining = 25 * 60;
+      }
+    }
+    this.updateDisplay();
+  },
+
+  start() {
+    if (this.running) return;
+    this.running = true;
+    document.getElementById('heroStartBtn').textContent = 'En cours…';
+    this.interval = setInterval(() => this.tick(), 1000);
+  },
+
+  reset() {
+    this.running = false;
+    clearInterval(this.interval);
+    this.phase = 'focus';
+    this.duration = 25 * 60;
+    this.remaining = 25 * 60;
+    document.getElementById('heroStartBtn').textContent = 'Démarrer';
+    this.updateDisplay();
+  }
+};
+
+heroTimer.updateDisplay();
+document.getElementById('heroStartBtn').addEventListener('click', () => heroTimer.start());
+document.getElementById('heroResetBtn').addEventListener('click', () => heroTimer.reset());
+
+// ─── Full Demo Timer ───
+const demoTimer = {
+  duration: 25 * 60,
+  remaining: 25 * 60,
+  running: false,
+  paused: false,
+  phase: 'focus',
+  cycles: 0,
+  focusMinutes: 0,
+  interval: null,
+
+  format(sec) {
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  },
+
+  updateDisplay() {
+    document.getElementById('demoTime').textContent = this.format(this.remaining);
+    document.getElementById('demoPhase').textContent = this.phase === 'focus' ? 'FOCUS' : this.phase === 'break' ? 'PAUSE COURTE' : 'LONGUE PAUSE';
+    const pct = 100 * (1 - this.remaining / this.duration);
+    document.getElementById('demoProgress').style.width = pct + '%';
+  },
+
+  tick() {
+    this.remaining--;
+    if (this.remaining <= 0) {
+      if (this.phase === 'focus') {
+        this.focusMinutes += Math.round(this.duration / 60);
+        this.cycles++;
+        document.getElementById('demoCycles').textContent = `Sessions : ${this.cycles}`;
+        document.getElementById('demoFocusTime').textContent = `Focus : ${this.focusMinutes} min`;
+        animateCounter('counterSessions', this.cycles);
+        animateCounter('counterMinutes', this.focusMinutes);
+        animateCounter('counterBreaks', this.cycles);
+        if (this.cycles % 4 === 0) {
+          this.phase = 'longBreak';
+          this.duration = 15 * 60;
+          this.remaining = 15 * 60;
+        } else {
+          this.phase = 'break';
+          this.duration = 5 * 60;
+          this.remaining = 5 * 60;
+        }
+      } else {
+        this.phase = 'focus';
+        this.duration = 25 * 60;
+        this.remaining = 25 * 60;
+      }
+    }
+    this.updateDisplay();
+  },
+
+  start() {
+    if (this.running && !this.paused) return;
+    if (this.paused) { this.paused = false; this.running = true; document.getElementById('demoPauseBtn').textContent = 'Pause'; return; }
+    this.running = true;
+    this.interval = setInterval(() => this.tick(), 1000);
+    document.getElementById('demoStartBtn').textContent = 'Démarrer';
+  },
+
+  pause() {
+    if (!this.running) return;
+    this.paused = !this.paused;
+    if (this.paused) {
+      clearInterval(this.interval);
+      document.getElementById('demoPauseBtn').textContent = 'Reprendre';
+    } else {
+      this.interval = setInterval(() => this.tick(), 1000);
+      document.getElementById('demoPauseBtn').textContent = 'Pause';
+    }
+  },
+
+  reset() {
+    this.running = false;
+    this.paused = false;
+    clearInterval(this.interval);
+    this.phase = 'focus';
+    this.duration = 25 * 60;
+    this.remaining = 25 * 60;
+    this.cycles = 0;
+    this.focusMinutes = 0;
+    document.getElementById('demoStartBtn').textContent = 'Démarrer';
+    document.getElementById('demoPauseBtn').textContent = 'Pause';
+    document.getElementById('demoCycles').textContent = 'Sessions : 0';
+    document.getElementById('demoFocusTime').textContent = 'Focus : 0 min';
+    this.updateDisplay();
+    animateCounter('counterSessions', 0);
+    animateCounter('counterMinutes', 0);
+    animateCounter('counterBreaks', 0);
+  }
+};
+
+demoTimer.updateDisplay();
+document.getElementById('demoStartBtn').addEventListener('click', () => demoTimer.start());
+document.getElementById('demoPauseBtn').addEventListener('click', () => demoTimer.pause());
+document.getElementById('demoResetBtn').addEventListener('click', () => demoTimer.reset());
+
+// ─── Animated counters ───
+function animateCounter(elId, target) {
+  const el = document.getElementById(elId);
+  const current = parseInt(el.textContent) || 0;
+  const start = current;
+  const duration = 800;
+  const startTime = performance.now();
+
+  function update(now) {
+    const t = Math.min((now - startTime) / duration, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(start + (target - start) * ease);
+    if (t < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+// ─── Sound pills ───
+function toggleSound(btn) {
+  const wasPlaying = btn.classList.contains('playing');
+  document.querySelectorAll('.sound-pill').forEach(b => b.classList.remove('playing'));
+  if (!wasPlaying) btn.classList.add('playing');
+}
+
+// ─── Accent swatches ───
+function setAccent(swatch) {
+  document.querySelectorAll('.palette-swatch').forEach(s => s.classList.remove('active'));
+  swatch.classList.add('active');
+  const color = swatch.dataset.color;
+  const map = {
+    sand: '#C4A685', terracotta: '#A67D6B', sage: '#8FA88A',
+    moss: '#7A9473', sky: '#8AA8C4', stoneblue: '#7594B5'
+  };
+  document.documentElement.style.setProperty('--sand', map[color]);
+}
+
+// ─── Theme toggle ───
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
+  document.getElementById('themeToggle').textContent = isDark ? '🌙' : '☀️';
+  window.dispatchEvent(new Event('themeChange'));
+});
+
+// ─── Download button ───
+document.getElementById('downloadBtn').addEventListener('click', (e) => {
+  e.preventDefault();
+  const btn = e.currentTarget;
+  btn.textContent = '📦 Préparation…';
+  btn.style.pointerEvents = 'none';
+  setTimeout(() => {
+    btn.textContent = '⬇️ Télécharger Pomodoro.app';
+    btn.style.pointerEvents = 'auto';
+    btn.href = '#';
+  }, 2000);
+});
+
+// ─── Scroll animation ───
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    if (e.target.classList.contains('stagger-children')) {
+      e.target.classList.add('visible');
+    } else {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.animate-in, .stagger-children').forEach(el => observer.observe(el));
+
+// ─── Smooth scroll ───
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#') return;
+    e.preventDefault();
+    const target = document.querySelector(id);
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
